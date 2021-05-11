@@ -84,7 +84,7 @@ def display_gradcam(img_path, heatmap, alpha=1):
 
 if __name__ == '__main__':
     model = tf.keras.models.load_model('basic_malaria_pos_neg_v1.h5')
-    image_path = r'C:\Users\aishw\PycharmProjects\pythonProject\cell_images\test\Parasitized\C39P4thinF_original_IMG_20150622_105803_cell_91.png'
+    image_path = r'cell_images\test\Parasitized\C39P4thinF_original_IMG_20150622_105803_cell_91.png'
     pred, heatmap = apply_gradcam(model, image_path)
     print(pred)
     super_imposed = display_gradcam(image_path, heatmap)
