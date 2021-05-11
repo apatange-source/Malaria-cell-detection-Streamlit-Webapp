@@ -2,8 +2,8 @@ from keras.preprocessing.image import ImageDataGenerator
 from architecture import *
 import matplotlib.pyplot as plt
 
-train_dir = r'C:\Users\aishw\PycharmProjects\pythonProject\cell_images\train'
-validation_dir = r'C:\Users\aishw\PycharmProjects\pythonProject\cell_images\val'
+train_dir = r'cell_images\train'
+validation_dir = r'cell_images\val'
 
 train_datagen = ImageDataGenerator(rescale=1. / 255)
 val_datagen = ImageDataGenerator(rescale=1. / 255)
